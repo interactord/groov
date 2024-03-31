@@ -11,17 +11,17 @@ let package = Package(
       targets: ["Authentication"]),
   ],
   dependencies: [
-    .package(path: "../Core/Domain"),
-    .package(path: "../Core/Platform"),
-    .package(path: "../Core/Functor"),
+     .package(path: "../../Core/Domain"),
+     .package(path: "../../Core/Platform"),
+     .package(path: "../../Core/Functor"),
   ],
   targets: [
     .target(
       name: "Authentication",
       dependencies: [
-        "Domain",
-        "Platform",
-        "Functor",
+         "Domain",
+         "Platform",
+         "Functor",
       ]),
     .testTarget(
       name: "AuthenticationTests",

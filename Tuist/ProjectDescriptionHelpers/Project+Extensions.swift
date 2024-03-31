@@ -14,3 +14,15 @@ extension Settings {
     }
   }
 }
+
+extension DeploymentTargets {
+  public static var `default`: Self {
+    .iOS("17.0")
+  }
+}
+
+extension InfoPlist {
+  public static var defaultInfoPlist: Self {
+    .default
+  }
+}
